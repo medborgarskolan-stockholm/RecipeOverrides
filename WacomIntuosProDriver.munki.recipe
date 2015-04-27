@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_DESCRIPTION</key>
+		<string>Drivers and support software for the Wacom Intuos Pro tablets.</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>autopkg/drivers/wacom</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jps3.munki.WacomIntuosProTabletDriver</string>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>autopkg/apps/davinciresolvelite11</string>
+		<key>NAME</key>
+		<string>DaVinciResolveLite11</string>
+		<key>REG_CITY</key>
+		<string></string>
+		<key>REG_EMAIL</key>
+		<string></string>
+		<key>REG_FIRSTNAME</key>
+		<string></string>
+		<key>REG_LASTNAME</key>
+		<string></string>
+		<key>REG_PHONE</key>
+		<string></string>
+		<key>REG_STATE</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>DaVinci color correctors have been the standard in post production since 1984. There are thousands of colorists worldwide who understand the performance, quality and workflow of DaVinci. DaVinci is the name behind more feature films, television commercials, documentaries, television production and music videos than any other grading system. When you’re in a room full of demanding clients with conflicting ideas, colorists know that only DaVinci has the quality, real time performance, creative features and powerful control panel you need to work fast!</string>
+			<key>display_name</key>
+			<string>DaVinci Resolve Lite 11</string>
+			<key>minimum_os_version</key>
+			<string>10.8.5</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>uninstall_method</key>
+			<string>uninstall_script</string>
+			<key>uninstall_script</key>
+			<string>#!/bin/sh
+            # Run the uninstaller script provided with the app.
+            # Alternatively, replace this with your own version of their uninstaller.
+            # For example, their uninstaller intentionally leaves the following on the
+            # system, which you may disagree with:
+            # - /Library/Application Support/Blackmagic Design/DaVinci Resolve
+            # - /Library/Preferences/Blackmagic Design/DaVinci Resolve
+            #
+            # Their uninstaller is also executable and world-writable.
+
+            UNINSTALL_SCRIPT="/Applications/DaVinci Resolve/Uninstall Resolve.app/Contents/Resources/uninstall.sh"
+
+            [ -x "${UNINSTALL_SCRIPT}" ] || exit 1
+            "${UNINSTALL_SCRIPT}"
+            </string>
+			<key>uninstallable</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.timsutton.munki.davinciresolvelite11</string>
+</dict>
+</plist>
